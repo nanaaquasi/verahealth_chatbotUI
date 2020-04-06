@@ -41,7 +41,7 @@
 
         .app-poweredby
             color: var(--text-secondary)
-            font-size: 14px
+            font-size: 10px
 
             a[href]
                 color: var(--text)

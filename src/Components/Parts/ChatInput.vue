@@ -76,6 +76,8 @@
 
     &:focus
         background-color: transparent
+        border: none
+        outline: none
 
 .button
     @include reset
