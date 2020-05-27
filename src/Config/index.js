@@ -2,7 +2,10 @@ export default {
   endpoint: 'https://verahealth-edpbcq.core.ushaflow.io', // <- enter your gateway URL here
   muted: false, // <- mute microphone at start
   start_suggestions: [
-    "Medications", "Dosage Info", "Drug Indication"
+    'Medications',
+    'Dosage Info',
+    'Drug Indication',
+    'Side Effects',
   ], // <- array of suggestions, displayed at the start screen
   fallback_lang: 'en', // <- fallback language code, if history mode or network is unavailable
   voice: 'native', // <- voice of Text-To-Speech; for reference, see: https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisVoice/voiceURI

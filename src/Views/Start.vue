@@ -7,40 +7,56 @@
 
     <h1>Enter your hospital Id</h1>
     <div class="form-input">
-      <input type="text" placeholder="Hospital Id" v-model="sessionId" class="input" />
+      <input
+        type="text"
+        placeholder="Hospital Id"
+        v-model="sessionId"
+        class="input"
+      />
       <button class="button" @click="onsubmitHandler">Submit</button>
     </div>
+
+    <Error v-if="error" :error="error" />
   </main>
 </template>
 
 <script>
-import Welcome from "./Welcome";
+import Welcome from './Welcome';
+import Error from '../Components/Parts/Error';
 
 export default {
-  name: "Start",
+  name: 'Start',
   components: {
-    Welcome
+    Welcome,
+    Error,
   },
   data() {
     return {
-      sessionId: ""
+      sessionId: '',
+      error: '',
     };
   },
   methods: {
     onsubmitHandler() {
       if (this.sessionId) {
-        this.$router.push({ name: "start", params: { id: this.sessionId } });
+        if (this.sessionId.toLowerCase().startsWith('vh')) {
+          this.$router.push({
+            name: 'start',
+            params: { id: this.sessionId },
+          });
+        } else {
+          this.error = 'Wrong ID, Please enter correct details';
+        }
       }
 
-      this.sessionId = "";
-    }
-  }
+      this.sessionId = '';
+    },
+  },
 };
 </script>
 
-
 <style lang="scss" scoped>
-@import "@/Style/Mixins";
+@import '@/Style/Mixins';
 
 .form-input {
   width: 100%;
@@ -125,7 +141,7 @@ export default {
     text-align: center;
     font-size: 24px;
     font-weight: 700;
-    font-family: "Visby Cf";
+    font-family: 'Visby Cf';
   }
 }
 </style>
