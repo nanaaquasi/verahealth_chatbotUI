@@ -16,4 +16,5 @@ export default new Router({
       component: Chat,
     },
   ],
+  mode: 'history',
 });
