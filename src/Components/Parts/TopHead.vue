@@ -15,8 +15,9 @@
 
 .app-head
     z-index: 666
-    padding: 12px
-    position: fixed
+    padding: 8px
+    margin-top: -10px
+    // position: fixed
     width: 100%
 
     @media screen and (max-width: 1000px)

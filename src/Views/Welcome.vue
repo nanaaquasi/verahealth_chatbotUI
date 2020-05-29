@@ -39,11 +39,14 @@
     font-weight: 500
     font-size: 24px
     margin-top: 30px
+    margin-bottom: 8px
     color: var(--text)
     line-height: 20px
 
 .app-description
     font-size: 16px
+    margin-bottom: 5px
+    margin-top: 5px
     color: var(--text-secondary)
 
 .language-picker
@@ -53,6 +56,7 @@
     cursor: pointer
     font-weight: 500
     margin-right: 2px
+    margin-top: 6px
     color: var(--text)
     align-items: center
 

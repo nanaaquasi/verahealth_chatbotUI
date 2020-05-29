@@ -4,16 +4,18 @@
         <i class="material-icons error-icon" aria-hidden="true">error</i>
 
         <!-- Error Description -->
-        <pre class="error-description">{{error}}</pre>
+        <p class="error-description">{{error}}</p>
     </div>
 </template>
 
 <style lang="sass" scoped>
 .overlay
     text-align: center
+    margin-top: 20px
+    width: 100%
 
 .error-icon
-    font-size: 128px
+    font-size: 58px
     color: var(--text)
     margin-bottom: 30px
 
@@ -21,9 +23,10 @@
     font-size: 16px
     color: var(--text)
     background-color: var(--element-background)
-    padding: 16px
+    padding: 10px 0
     border-radius: 16px
-    overflow: scroll
+   
+    // overflow: scroll
 </style>
 
 <script>

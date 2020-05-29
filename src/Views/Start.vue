@@ -80,7 +80,7 @@ export default {
   font-family: inherit;
 
   &:focus {
-    background-color: #333333;
+    background-color: var(--element-background);
     border: none;
     outline: none;
   }
@@ -89,13 +89,14 @@ export default {
 .image-container {
   width: 150px;
   height: 150px;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
+  margin-top: -80px;
 
   h3 {
     font-size: 28px;
     color: rgb(181, 241, 103);
-    margin: 5px 0;
-    font-weight: 700;
+    margin: 2px 0;
+    font-weight: 900;
   }
 
   img {
@@ -111,16 +112,16 @@ export default {
   margin-left: 6px;
   border-radius: 10px;
   cursor: pointer;
-  background-color: var(--element-background);
-  color: var(--text);
+  background-color: rgb(152, 168, 63);
+  color: black;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 800;
   display: flex;
   justify-content: center;
   margin-top: 15px;
 
   &:hover {
-    background-color: #333333;
+    background-color: rgb(161, 185, 24);
   }
 
   &:focus {
@@ -130,16 +131,16 @@ export default {
 }
 
 .container {
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   h1 {
-    color: whitesmoke;
+    color: var(--text);
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
+    padding: 10px 10px;
     font-weight: 700;
     font-family: 'Visby Cf';
   }
