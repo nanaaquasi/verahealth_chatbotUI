@@ -26,11 +26,14 @@ body
   font-display: swap
   background-color: var(--background)
   overflow: hidden
+  display: grid
+  place-items: center
+  place-content: center
 
 .container
-  max-width: 500px
-  margin-left: auto
-  margin-right: auto
+  width: 500px
+  height: 100%
+  margin: 0 auto
   padding: 4px
 </style>
 

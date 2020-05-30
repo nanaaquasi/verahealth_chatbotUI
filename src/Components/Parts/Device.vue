@@ -13,8 +13,21 @@
           <div class="notch_left">
             <h6>9:00</h6>
           </div>
-          <div class="notch_bar"></div>
-          <div class="notch_right"></div>
+          <div class="notch_bar">
+            <div class="long"></div>
+            <div class="round"></div>
+          </div>
+          <div class="notch_right">
+            <div class="network">
+              <img src="../../Assets/bar-chart.png"/>
+            </div>
+            <div class="wifi">
+              <img src="../../Assets/wi-fi.png"/>
+            </div>
+            <div class="battery">
+              <img src="../../Assets/full-battery.png"/>
+            </div>
+          </div>
         </div>
         <div class="content">
           <slot></slot>
@@ -42,12 +55,17 @@ export default {
   height: 100%;
   /* padding: 10px 0; */
   position: relative;
+
+ 
+ 
 }
 
 .device {
   width: 330px;
   display: flex;
   margin: 0 auto;
+
+ 
 }
 
 .device_side_left,
@@ -111,16 +129,40 @@ export default {
   width: 100%;
   height: 40px;
   display: grid;
-  grid-template-columns: 60px 1fr 60px;
+  grid-template-columns: 70px 1fr 70px;
   grid-template-areas: "left notch right";
 }
 
 .notch_bar {
   grid-area: notch;
   background: rgb(17, 17, 17);
-  height: 25px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  height: 35px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .long {
+    background: rgb(158, 158, 158);
+    width: 50px;
+    height: 4px;
+    border-radius: 25px;
+    /* padding: 5px; */
+    margin-bottom: 6px;
+  }
+
+   .round {
+    background: rgb(100, 100, 100);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    border: 1px solid rgb(129, 129, 129);
+    /* padding: 2px; */
+  }
 }
 
 .notch_left {
@@ -140,12 +182,11 @@ export default {
 
 .notch_right {
   grid-area: right;
-  /* margin-right: 3rem; */
   margin-bottom: 10px;
   padding-right: 10px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
