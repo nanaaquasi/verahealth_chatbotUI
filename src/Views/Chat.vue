@@ -596,9 +596,13 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+
+@import '@/Style/Mixins'
+
 .chat-container
   padding-top: 10px
-  padding-bottom: 125px
+  padding-bottom: 100px
+  max-width: 100%
 
 .container
   width: 100%
@@ -607,7 +611,7 @@ export default {
 .welcome_message
   margin-bottom: 30px
   p
-    color: white
+    color: var(--text)
     font-size: 16px
     font-weight: 700
     text-align: center

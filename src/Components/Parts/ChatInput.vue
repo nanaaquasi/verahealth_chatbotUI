@@ -50,7 +50,7 @@
 
 .bottomchat
     position: sticky
-    flex: 1
+    // flex: 1
     bottom: 0
     left: 0
     width: auto
@@ -62,7 +62,7 @@
 
 .suggestions
     width: 100%
-    height: 100%
+    // height: 100%
     overflow-x: scroll
     overflow-y: hidden
     white-space: nowrap
@@ -87,14 +87,17 @@
 .input
     font-size: 16px
     font-weight: 500
-    width: 100%
+    max-width: 100%
+    height: 100%
     box-sizing: border-box
     border: none
     padding: 10px 12px
     color: var(--text)
     border-radius: 40px
     font-family: inherit
-    flex: 1 0 0
+    flex: 1 
+    flex-wrap: wrap
+    overflow-y: scroll
     background-color: var(--element-background)
 
     &:focus
