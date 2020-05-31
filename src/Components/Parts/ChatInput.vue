@@ -7,7 +7,7 @@
       </div>
       <div class="flexible">
         <!-- Text input -->
-        <input
+        <textarea
           v-model="query"
           class="input"
           type="text"
@@ -70,8 +70,8 @@
 
     
     &::-webkit-scrollbar 
-       height: 2px
-       border-radius: 10px
+      height: 2px
+      border-radius: 10px
     
 
     &::-webkit-scrollbar-track 
@@ -87,7 +87,7 @@
 .input
     font-size: 16px
     font-weight: 500
-    max-width: 100%
+    max-width: 60%
     height: 100%
     box-sizing: border-box
     border: none
@@ -118,7 +118,7 @@
 
     &.mic_active
         background-color: #F44336
-        color: white
+        color: var(--text)
 </style>
 
 <script>

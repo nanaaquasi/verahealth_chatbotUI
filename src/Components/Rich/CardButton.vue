@@ -13,7 +13,7 @@
     border: 1px solid var(--border)
     border-radius: 40px
     display: block
-    font-weight: 500
+    font-weight: 800
     padding: 8px 16px
     text-align: center
     position: relative

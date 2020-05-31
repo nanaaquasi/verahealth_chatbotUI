@@ -4,7 +4,6 @@
         <img v-else class="app-icon" src="https://console.dialogflow.com/api-client/assets/img/logo-short.png" :alt="app.displayName">
         <div class="app-info">
             <div class="app-name">{{app.displayName}}</div>
-            <div class="app-poweredby">Built with <a target="_blank" rel="noopener noreferrer" href="https://dialogflow.cloud.ushakov.co" aria-hidden="true">Dialogflow Gateway</a></div>
         </div>
         <slot />
     </header>
@@ -17,8 +16,13 @@
     z-index: 666
     padding: 8px
     margin-top: -10px
-    // position: fixed
+    position: sticky
+    top: 0
+    display: flex
+    align-items: center
     width: 100%
+    margin-left: 5px
+    box-shadow: var(--shadow)
 
     @media screen and (max-width: 1000px)
         background-color: var(--background)
@@ -32,11 +36,11 @@
 
     .app-info
         display: inline-block
-        margin-left: 10px
+        margin-left: 5px
 
         .app-name
-            font-size: 18px
-            font-weight: 500
+            font-size: 16px
+            font-weight: 800
             color: var(--text)
             line-height: 15px
 

@@ -25,6 +25,9 @@
     font-weight: 500
     margin-bottom: 12px
 
+    &:focus
+        border: none
+
 .suggestion[href]
     color: var(--accent)
     text-decoration: none

@@ -14,7 +14,7 @@
 .card
     background-color: var(--component-background)
     box-shadow: var(--shadow)
-    border-radius: 12px
+    border-radius: 15px
     line-height: 1.5
 
 .card-image
@@ -30,7 +30,8 @@
     line-height: 1.5
 
 .card-title
-    font-weight: 500
+    font-weight: 800
+    margin-bottom: 5px
     font-size: 20px
     color: var(--text)
     line-height: 24px
